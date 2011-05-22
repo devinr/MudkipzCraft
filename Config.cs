@@ -9,7 +9,6 @@ namespace MudkipzCraft
 {
     public class Config : XmlSerializer
     {
-        private static NLog.Logger logger = NLog.LogManager.GetCurrentClassLogger();
         const string CONFIG_FILE = "config.xml";
         public string ListenIP { get; set; }
         public int ListenPort { get; set; }
@@ -51,7 +50,7 @@ namespace MudkipzCraft
             }
             else
             {
-                logger.Warn("Configuration file not found - loading defaults.");
+                Logger.Warn("Configuration file not found - loading defaults.");
             }
             return this;
         }

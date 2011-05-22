@@ -36,7 +36,6 @@
     <StartupObject>MudkipzCraft.MudkipzCraft</StartupObject>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="NLog, Version=1.0.0.505, Culture=neutral, PublicKeyToken=5120e14c03d0593c, processorArchitecture=MSIL" />
     <Reference Include="System" />
     <Reference Include="System.Data" />
     <Reference Include="System.Xml" />
@@ -44,6 +43,7 @@
   <ItemGroup>
     <Compile Include="Client.cs" />
     <Compile Include="Config.cs" />
+    <Compile Include="Logger.cs" />
     <Compile Include="MudkipzCraft.cs" />
     <Compile Include="NetHandler.cs" />
     <Compile Include="Packet02Handshake.cs" />
