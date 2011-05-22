@@ -51,6 +51,7 @@ namespace MudkipzCraft
             else
             {
                 Logger.Warn("Configuration file not found - loading defaults.");
+                Save();
             }
             return this;
         }
